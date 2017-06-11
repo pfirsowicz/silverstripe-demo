@@ -676,12 +676,12 @@ class InstallRequirements {
 	}
 
 	public function requireDateTimezone($testDetails) {
-		$this->testing($testDetails);
+		//$this->testing($testDetails);
 
-		$result = ini_get('date.timezone') && in_array(ini_get('date.timezone'), timezone_identifiers_list());
-		if(!$result) {
-			$this->error($testDetails);
-		}
+		//$result = ini_get('date.timezone') && in_array(ini_get('date.timezone'), timezone_identifiers_list());
+		//if(!$result) {
+		//	$this->error($testDetails);
+		//}
 	}
 
 	public function requireMemory($min, $recommended, $testDetails) {
