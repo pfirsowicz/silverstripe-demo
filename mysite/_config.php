@@ -16,5 +16,7 @@ $databaseConfig = array(
 
 require_once 'conf/ConfigureFromEnv.php';
 
+Security::setDefaultAdmin('admin','admin');
+
 // Set the site locale
 i18n::set_locale('en_US');
